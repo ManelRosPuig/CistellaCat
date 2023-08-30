@@ -1,4 +1,4 @@
-import 'package:cistella_cat/widgets/home.dart';
+import 'package:cistella_cat/widgets/home/home.dart';
 import 'package:flutter/material.dart';
 
 class GeneralProvider extends ChangeNotifier {
