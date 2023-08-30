@@ -1,4 +1,6 @@
+import 'package:cistella_cat/widgets/family.dart';
 import 'package:cistella_cat/widgets/home/home.dart';
+import 'package:cistella_cat/widgets/shoppings.dart';
 import 'package:flutter/material.dart';
 
 class GeneralProvider extends ChangeNotifier {
@@ -10,7 +12,7 @@ class GeneralProvider extends ChangeNotifier {
 
   void navigateToShopping() {
     _index = 0;
-    _body = Container();
+    _body = const Shoppings();
     notifyListeners();
   }
 
@@ -22,7 +24,7 @@ class GeneralProvider extends ChangeNotifier {
 
   void navigateToPeople() {
     _index = 2;
-    _body = Container();
+    _body = const Family();
     notifyListeners();
   }
 }
