@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class RecentShopping extends StatelessWidget {
-  const RecentShopping(this.label, this.price, {super.key});
+  const RecentShopping({
+    super.key,
+    required this.label,
+    required this.price,
+    required this.icon,
+  });
 
   final String label;
   final double price;
+  final String icon;
 
   @override
   Widget build(BuildContext context) {
@@ -32,10 +38,12 @@ class RecentShopping extends StatelessWidget {
               color: Colors.grey.shade300,
               borderRadius: BorderRadius.circular(25),
             ),
-            child: Image.network(
-              'https://ecommerce-images.bonarea.com/v1/img/es/1000x1000/13_7614_1.png',
-              width: 50,
-              height: 50,
+            child: Center(
+              child: Image.asset(
+                icon,
+                width: 35,
+                height: 35,
+              ),
             ),
           ),
           const SizedBox(width: 16),

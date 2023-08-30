@@ -34,15 +34,21 @@ class RecentShoppings extends StatelessWidget {
               padding: EdgeInsets.only(right: 16.0),
               child: Column(
                 children: [
-                  RecentShopping('Aigua BonArea', 3.21),
-                  RecentShopping('Llet BonArea', 2.79),
-                  RecentShopping('Pasta Barilla', 1.29),
-                  RecentShopping('Pasta Barilla', 1.29),
-                  RecentShopping('Pasta Barilla', 1.29),
-                  RecentShopping('Pasta Barilla', 1.29),
-                  RecentShopping('Pasta Barilla', 1.29),
-                  RecentShopping('Pasta Barilla', 1.29),
-                  RecentShopping('Pasta Barilla', 1.29),
+                  RecentShopping(
+                    label: 'Aigua 5L BonArea',
+                    price: 3.21,
+                    icon: 'assets/images/food/water.png',
+                  ),
+                  RecentShopping(
+                    label: 'Llet 6L BonArea',
+                    price: 2.79,
+                    icon: 'assets/images/food/milk_bottle.png',
+                  ),
+                  RecentShopping(
+                    label: 'Pizzas Condis',
+                    price: 4.89,
+                    icon: 'assets/images/food/pizza.png',
+                  ),
                 ],
               ),
             ),
