@@ -18,7 +18,7 @@ class GeneralScaffold extends StatelessWidget {
       child: Scaffold(
         key: drawerKey,
         appBar: AppBar(
-          title: const Text('Cistella Cat'),
+          title: const Text('Cistella Cat', textScaleFactor: 1.0),
           titleTextStyle: GoogleFonts.roboto(
             fontSize: 24,
             color: Colors.white,

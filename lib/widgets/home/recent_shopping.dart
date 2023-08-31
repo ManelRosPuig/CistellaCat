@@ -52,6 +52,7 @@ class RecentShopping extends StatelessWidget {
             children: [
               Text(
                 label,
+                textScaleFactor: 1.0,
                 style: GoogleFonts.roboto(
                   fontSize: 16,
                   color: Colors.black,
@@ -62,6 +63,7 @@ class RecentShopping extends StatelessWidget {
           const Spacer(),
           Text(
             '$price€',
+            textScaleFactor: 1.0,
             style: GoogleFonts.roboto(
               fontSize: 16,
               color: Colors.black,

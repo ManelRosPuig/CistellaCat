@@ -13,6 +13,7 @@ class YourShoppingListsText extends StatelessWidget {
         width: double.infinity,
         child: Text(
           'Les teves llistes de la compra:',
+          textScaleFactor: 1.0,
           style: GoogleFonts.roboto(
             fontSize: 16,
             color: Colors.grey.shade900,

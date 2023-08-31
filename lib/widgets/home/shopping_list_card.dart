@@ -37,6 +37,7 @@ class ShoppingListCard extends StatelessWidget {
             ? Center(
                 child: Text(
                 '+',
+                textScaleFactor: 1.0,
                 style: GoogleFonts.roboto(
                   fontSize: 48,
                   fontWeight: FontWeight.bold,
@@ -56,6 +57,7 @@ class ShoppingListCard extends StatelessWidget {
                     width: 110,
                     child: Text(
                       label!,
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.roboto(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

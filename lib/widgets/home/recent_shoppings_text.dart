@@ -13,6 +13,7 @@ class RecentShoppingsText extends StatelessWidget {
         width: double.infinity,
         child: Text(
           'Compres recents:',
+          textScaleFactor: 1.0,
           style: GoogleFonts.roboto(
             fontSize: 16,
             color: Colors.grey.shade900,

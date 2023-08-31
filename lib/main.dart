@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:cistella_cat/widgets/my_app.dart';
+import 'package:cistella_cat/app_provider.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  runApp(const AppProvider());
 }
