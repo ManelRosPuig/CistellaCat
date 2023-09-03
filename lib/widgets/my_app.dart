@@ -1,3 +1,4 @@
+import 'package:cistella_cat/widgets/general_scaffold.dart';
 import 'package:cistella_cat/widgets/login.dart';
 import 'package:flutter/material.dart';
 
@@ -14,16 +15,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Cistella Cat',
-      home: FutureBuilder(
-        future: GeneralProvider.automaticLogin(context),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const CircularProgressIndicator(); // Show loading indicator
-          } else {
-            return const Login();
-          }
-        },
-      ),
+      home: GeneralScaffold(),
+      // FutureBuilder(
+      // future: GeneralProvider.automaticLogin(context),
+      // builder:
+      // (context, snapshot) {
+      // if (snapshot.connectionState == ConnectionState.waiting) {
+      //   return const CircularProgressIndicator();
+      // } else {
+      //   if (snapshot.data != null) {
+      //     return snapshot.data!;
+      //   }
+      //   return const Login();
+      // }
+      // },
     );
   }
 }

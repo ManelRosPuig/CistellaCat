@@ -10,8 +10,18 @@ Future signIn() async {
     print("Email ${user.email}");
     print("Photo ${user.photoUrl}");
     print("Id ${user.id}");
-    print("AuthHeaders ${user.authHeaders}");
+    user.authHeaders.then((value) {
+      print("AuthHeaders $value");
+    });
     print("ServerAuthCode ${user.serverAuthCode}");
+    user.authentication.then((value) {
+      print("AccessToken ${value.accessToken}");
+      print("IdToken ${value.idToken}");
+      // print("Token ${value.token}");
+      // print("Expiration ${value.expiration}");
+      // print("IssuedAt ${value.issuedAt}");
+      // print("SignInProvider ${value.signInProvider}");
+    });
   }
   await Future.delayed(const Duration(seconds: 1));
   GoogleSignInApi.logout();
@@ -19,8 +29,9 @@ Future signIn() async {
 
 class GoogleSignInApi {
   // static final _clientIDWeb = 'duwqdhqwuiuhd';
-  // static final _googleSignIn = GoogleSignIn(clientId: _clientIDWeb)
-  static final _googleSignIn = GoogleSignIn();
+  static final _googleSignIn = GoogleSignIn(
+      clientId: '674602541252-rdafah6mghohm9lbv67phvnjnl1u0mku.apps.googleusercontent.com');
+  // static final _googleSignIn = GoogleSignIn();
 
   static Future<GoogleSignInAccount?> login() => _googleSignIn.signIn();
 
