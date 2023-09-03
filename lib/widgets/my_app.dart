@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<GeneralProvider>(context);
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Cistella Cat',
-      home: GeneralScaffold(),
+      home: Login(),
       // FutureBuilder(
       // future: GeneralProvider.automaticLogin(context),
       // builder:
