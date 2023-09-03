@@ -5,3 +5,4 @@ Cistella Cat simplifies shopping list management, letting you create and share l
 The project is still under development, this is the very first preview.
 <br><br>
 ![](https://raw.githubusercontent.com/ManelRosPuig/CistellaCat/main/assets/previews/CistellaCatPreview.gif)
+![](https://raw.githubusercontent.com/ManelRosPuig/CistellaCat/main/assets/previews/GoogleLoginPreview.gif)
